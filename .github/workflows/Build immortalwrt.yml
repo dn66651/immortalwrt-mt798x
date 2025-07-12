@@ -26,7 +26,7 @@ jobs:
       - name: Clone OpenWrt source
         run: |
           git clone https://github.com/hanwckf/immortalwrt-mt798x.git
-          cp -f mt7981.ax3000.config  immortalwrt-mt798x/.config   # ✅ 把配置文件复制进去
+          cp -f mt7981-ax3000.config  immortalwrt-mt798x/.config   # ✅ 把配置文件复制进去
           cd immortalwrt-mt798x
           ./scripts/feeds update -a
           ./scripts/feeds install -a
